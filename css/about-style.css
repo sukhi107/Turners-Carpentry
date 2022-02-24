@@ -1,0 +1,424 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  font-size: 1em;
+  font-family: montserrat, serif;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+#main-header {
+  border-bottom: 2px solid #ff7f50;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  height: 200px;
+  background-color: black; // change to hex value
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 200px;
+  height: 160px;
+  margin-top: 20px;
+  margin-right: 500px;
+}
+
+@media (max-width: 1397px) {
+  .logo {
+    margin-right: 400px;
+  }
+}
+
+@media (max-width: 1297px) {
+  .logo {
+    margin-right: 300px;
+  }
+}
+
+@media (max-width: 1197px) {
+  .logo {
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 1097px) {
+  .logo {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 997px) {
+  .logo {
+    margin-right: 50px;
+  }
+}
+
+#top-navbar {
+  height: 50px;
+  margin-top: 78px;
+}
+
+@media (max-width: 526px) {
+  #top-navbar {
+    margin-top: 50px;
+  }
+}
+
+#top-navbar ul {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+#top-navbar ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 1.5em;
+  padding-bottom: 18px;
+  padding-top: 4px;
+}
+
+@media (max-width: 656px) {
+  #top-navbar ul li {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 566px) {
+  .logo {
+    margin-right: 10px;
+  }
+}
+
+#top-navbar ul a {
+  text-decoration: none;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 17px;
+  transition: color 0.3s ease-out;
+}
+
+#top-navbar ul a:hover {
+  /* color: #303841; */
+  color: #ff7f50;
+}
+
+#top-navbar ul a:active {
+  color: #303841;
+  /* color: #ff7f50; */
+}
+
+main {
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  border-bottom: 2px solid #ff7f50;
+}
+
+#grid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+}
+
+#main-content {
+  text-align: left !important;
+  font-size: 1.2em;
+  color: white; /* I think it looks better in black but see what callum says. */
+}
+
+.about-us-1-image {
+  width: 550px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 50px
+}
+
+@media (max-width: 1203px) {
+  .about-us-1-image {
+    width: 450px;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 1187px) {
+  .about-us-1-image {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1159px) {
+  .about-us-1-image {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1113px) {
+  .about-us-1-image {
+    display: none;
+  }
+  #main-image {
+    display: none;
+  }
+  #grid {
+    padding-top: 25px;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+#bottom-navbar {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+#bottom-navbar ul {
+  margin-top: 0;
+}
+
+#bottom-navbar ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 1.5em;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+#bottom-navbar ul a {
+  text-decoration: none;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 17px;
+  transition: color 0.3s ease-out;
+}
+
+#bottom-navbar ul a:hover {
+  /* color: #303841; */
+  color: #ff7f50;
+}
+
+#bottom-navbar ul a:active {
+  color: #303841;
+  /* color: #ff7f50; */
+}
+
+#contact-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-column-gap: 0px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+#email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  justify-self: center;
+  transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 851px) {
+  #email {
+    width: 180px;
+  }
+}
+
+@media (max-width: 701px) {
+  #email {
+    width: 140px;
+  }
+}
+
+#email:hover {
+  transform: translateY(8px);
+}
+
+.email-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+#phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  justify-self: center;
+  transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 851px) {
+  #phone {
+    width: 220px;
+  }
+}
+
+@media (max-width: 701px) {
+  #phone {
+    width: 180px;
+  }
+}
+
+#phone:hover {
+  transform: translateY(8px);
+}
+
+.phone-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+#facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  justify-self: center;
+  transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 851px) {
+  #facebook {
+    width: 130px;
+  }
+}
+
+@media (max-width: 701px) {
+  #facebook {
+    width: 110px;
+  }
+}
+
+#facebook:hover {
+  transform: translateY(8px);
+}
+
+.facebook-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+#email a,
+#phone a,
+#facebook a {
+  color: white;
+  text-decoration: none;
+}
+
+#email p,
+#phone p,
+#facebook p {
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+@media (max-width: 1001px) {
+  #email p,
+  #phone p,
+  #facebook p {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 851px) {
+  #email p,
+  #phone p,
+  #facebook p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 701px) {
+  #email p,
+  #phone p,
+  #facebook p {
+    font-size: 0.80em;
+  }
+}
+
+#sub-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 100px;
+  justify-content: center;
+}
+
+@media (max-width: 507px) {
+  #sub-footer {
+    grid-column-gap: 50px;
+  }
+}
+
+#copyright {
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-self: start;
+}
+
+@media (max-width: 652px) {
+  #copyright {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 555px) {
+  #copyright {
+    font-size: 0.7em;
+  }
+}
+
+#plug {
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-self: end;
+}
+
+@media (max-width: 652px) {
+  #plug {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 555px) {
+  #plug {
+    font-size: 0.7em;
+  }
+}

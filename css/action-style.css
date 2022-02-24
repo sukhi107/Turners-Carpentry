@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  font-size: 1em;
+  font-family: montserrat, serif;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+#main-header {
+  border-bottom: 2px solid #ff7f50;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  height: 200px;
+  background-color: black; // change to hex value
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 200px;
+  height: 160px;
+  margin-top: 20px;
+  margin-right: 500px;
+}
+
+@media (max-width: 1397px) {
+  .logo {
+    margin-right: 400px;
+  }
+}
+
+@media (max-width: 1297px) {
+  .logo {
+    margin-right: 300px;
+  }
+}
+
+@media (max-width: 1197px) {
+  .logo {
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 1097px) {
+  .logo {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 997px) {
+  .logo {
+    margin-right: 50px;
+  }
+}
+
+#top-navbar {
+  height: 50px;
+  margin-top: 78px;
+}
+
+@media (max-width: 526px) {
+  #top-navbar {
+    margin-top: 50px;
+  }
+}
+
+#top-navbar ul {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+#top-navbar ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 1.5em;
+  padding-bottom: 18px;
+  padding-top: 4px;
+}
+
+@media (max-width: 656px) {
+  #top-navbar ul li {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 566px) {
+  .logo {
+    margin-right: 10px;
+  }
+}
+
+#top-navbar ul a {
+  text-decoration: none;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 17px;
+  transition: color 0.3s ease-out;
+}
+
+#top-navbar ul a:hover {
+  /* color: #303841; */
+  color: #ff7f50;
+}
+
+#top-navbar ul a:active {
+  color: #303841;
+  /* color: #ff7f50; */
+}
+
+main {
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  border-bottom: 2px solid #ff7f50;
+}
+
+#message {
+  margin: 0;
+  padding-top: 164px;
+  padding-bottom: 164px;
+  color: white;
+}
+
+#thank {
+  margin: 0;
+  font-size: 4em;
+  padding-bottom: 50px;
+}
+
+#return-link {
+  margin: 0;
+  font-size: 2em;
+}
